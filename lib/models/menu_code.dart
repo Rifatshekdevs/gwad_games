@@ -1,0 +1,1 @@
+enum MenuCode { HOME, SPORTS, BETS, GAMES, ACCOUNT }
