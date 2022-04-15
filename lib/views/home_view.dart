@@ -42,7 +42,6 @@ class _HomeViewState extends State<HomeView> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Image.asset("images/app_name.png"),
                   Row(
                     children: [
                       InkWell(
@@ -63,23 +62,29 @@ class _HomeViewState extends State<HomeView> {
                           ),
                           onTap: () {}),
                       const SizedBox(width: 16.0),
-                      InkWell(
-                          child: Container(
-                            height: 39,
-                            width: 78,
-                            decoration: BoxDecoration(
-                                color: AppColors.lightOrange,
-                                borderRadius: BorderRadius.circular(5.0)),
-                            child: const Center(
-                                child: Text(
-                              "Join Now",
-                              style: TextStyle(
-                                  color: AppColors.basicWhite, fontSize: 16.0),
-                            )),
-                          ),
-                          onTap: () {}),
                     ],
                   ),
+                  Center(
+                    child: Image.asset(
+                      "images/image 1.png",
+                      width: 50,
+                    ),
+                  ),
+                  InkWell(
+                      child: Container(
+                        height: 39,
+                        width: 78,
+                        decoration: BoxDecoration(
+                            color: AppColors.lightOrange,
+                            borderRadius: BorderRadius.circular(5.0)),
+                        child: const Center(
+                            child: Text(
+                          "Join Now",
+                          style: TextStyle(
+                              color: AppColors.basicWhite, fontSize: 15.0),
+                        )),
+                      ),
+                      onTap: () {}),
                 ],
               ),
               const SizedBox(height: 30.0),
@@ -410,7 +415,7 @@ class _HomeViewState extends State<HomeView> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               const Text(
-                                  "NCAA Men's Basketball champpionship 2022",
+                                  "NCAA Men's Basketball championship 2022",
                                   style: TextStyle(
                                       color: AppColors.basicWhite,
                                       fontSize: 14.0)),
@@ -467,7 +472,7 @@ class _HomeViewState extends State<HomeView> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               const Text(
-                                "National champpionship",
+                                "National championship",
                                 style: TextStyle(
                                   color: AppColors.basicWhite,
                                   fontSize: 14.0,

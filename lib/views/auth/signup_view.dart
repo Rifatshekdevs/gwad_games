@@ -50,9 +50,9 @@ class _SignupViewState extends State<SignupView> {
           child: Column(
             children: [
               const Text(
-                'Log in to Gawdgames',
+                'Log in to GawdGames',
                 style: TextStyle(
-                    color: AppColors.basicWhite,
+                    color: AppColors.lightOrange,
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -93,7 +93,7 @@ class _SignupViewState extends State<SignupView> {
                   name: 'Create account',
                   onpressed: () => Get.off(() => const VerificationView())),
               const SizedBox(height: 30.0),
-              const Text("Don't have a Gawdgames account ?",
+              const Text("Don't have a GawdGames account ?",
                   style: TextStyle(color: AppColors.basicWhite)),
               const SizedBox(height: 20.0),
               GestureDetector(

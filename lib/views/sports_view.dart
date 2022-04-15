@@ -60,7 +60,7 @@ class _SportsViewState extends State<SportsView> {
             const SizedBox(height: 20.0),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 10.0),
-              child: Text("Othre Links",
+              child: Text("Other Links",
                   style: TextStyle(
                       color: AppColors.basicWhite,
                       fontSize: 18.0,

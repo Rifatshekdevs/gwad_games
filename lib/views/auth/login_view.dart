@@ -52,9 +52,9 @@ class _LoginViewState extends State<LoginView> {
           child: Column(
             children: [
               const Text(
-                'Log in to Gawdgames',
+                'Log in to GawdGames',
                 style: TextStyle(
-                    color: AppColors.basicWhite,
+                    color: AppColors.lightOrange,
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold),
               ),
@@ -133,8 +133,8 @@ class _LoginViewState extends State<LoginView> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text("Don't have a Gawdgames account ?",
-                      style: TextStyle(color: AppColors.basicWhite)),
+                  const Text("Don't have a GawdGames account ?",
+                      style: TextStyle(color: AppColors.lightOrange)),
                   const SizedBox(width: 5.0),
                   GestureDetector(
                     child: const Text('Sign up now',

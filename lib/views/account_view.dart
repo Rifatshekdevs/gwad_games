@@ -9,7 +9,7 @@ import 'add_fund_view.dart';
 import 'transaction_history_view.dart';
 
 class AccountView extends StatefulWidget {
-  const AccountView({ Key? key }) : super(key: key);
+  const AccountView({Key? key}) : super(key: key);
 
   @override
   _AccountViewState createState() => _AccountViewState();
@@ -24,18 +24,26 @@ class _AccountViewState extends State<AccountView> {
       backgroundColor: AppColors.appBackgroundColor,
       appBar: AppBar(
         backgroundColor: AppColors.appBarColor,
-        title: const Text("All Sports", style: TextStyle(color: AppColors.basicWhite)),
+        title: const Text("All Sports",
+            style: TextStyle(color: AppColors.basicWhite)),
         actions: const [
-          InkWell(child: Padding(
+          InkWell(
+              child: Padding(
             padding: EdgeInsets.all(20.0),
-            child: Text("Done", style: TextStyle(color: AppColors.basicWhite, fontWeight: FontWeight.bold)),
+            child: Text("Done",
+                style: TextStyle(
+                    color: AppColors.basicWhite, fontWeight: FontWeight.bold)),
           )),
         ],
       ),
       body: SingleChildScrollView(
-        child: Column(
+          child: Column(
         children: [
-          const Padding(padding: EdgeInsets.symmetric(vertical: 30.0),child: Text("My account", style: TextStyle(color: AppColors.basicWhite, fontSize: 16.0))),
+          const Padding(
+              padding: EdgeInsets.symmetric(vertical: 30.0),
+              child: Text("My account",
+                  style:
+                      TextStyle(color: AppColors.basicWhite, fontSize: 16.0))),
           Container(
             height: 90,
             width: Get.width,
@@ -52,10 +60,12 @@ class _AccountViewState extends State<AccountView> {
                       child: Image.asset("images/pro_logo.png", height: 30),
                     ),
                     const SizedBox(width: 20.0),
-                    const Text("Naveen69", style: TextStyle(color: AppColors.basicWhite)),
+                    const Text("Naveen69",
+                        style: TextStyle(color: AppColors.basicWhite)),
                   ],
                 ),
-                const Icon(Icons.settings_outlined, color: AppColors.basicWhite),
+                const Icon(Icons.settings_outlined,
+                    color: AppColors.basicWhite),
               ],
             ),
           ),
@@ -65,13 +75,19 @@ class _AccountViewState extends State<AccountView> {
             children: [
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16.0),
-                child: Text("Overview", style: TextStyle(color: AppColors.basicWhite, fontSize: 16.0)),
+                child: Text("Overview",
+                    style:
+                        TextStyle(color: AppColors.basicWhite, fontSize: 16.0)),
               ),
-              CustomSwitchWidget(text: "",val: val, onChangedMethod: (bool newVal){
-                setState(() {
-                  val = newVal;
-                });
-              },),
+              CustomSwitchWidget(
+                text: "",
+                val: val,
+                onChangedMethod: (bool newVal) {
+                  setState(() {
+                    val = newVal;
+                  });
+                },
+              ),
             ],
           ),
           const SizedBox(height: 30.0),
@@ -88,18 +104,30 @@ class _AccountViewState extends State<AccountView> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
-                      Text("Playable Balance", style: TextStyle(color: AppColors.basicWhite, fontSize: 16.0, fontWeight: FontWeight.bold)),
+                      Text("Playable Balance",
+                          style: TextStyle(
+                              color: AppColors.basicWhite,
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.bold)),
                       SizedBox(height: 10.0),
-                      Text("FANDUEL SPORTSBOOK", style: TextStyle(color: AppColors.basicWhite, fontSize: 14.0)),
+                      Text("GAWDGAMES SPORTSBOOK",
+                          style: TextStyle(
+                              color: AppColors.basicWhite, fontSize: 14.0)),
                     ],
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
-                      Text("\$256", style: TextStyle(color: AppColors.basicWhite, fontSize: 16.0, fontWeight: FontWeight.bold)),
+                      Text("\$256",
+                          style: TextStyle(
+                              color: AppColors.basicWhite,
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.bold)),
                       SizedBox(height: 10.0),
-                      Text("BALANCE", style: TextStyle(color: AppColors.basicWhite, fontSize: 14.0)),
+                      Text("BALANCE",
+                          style: TextStyle(
+                              color: AppColors.basicWhite, fontSize: 14.0)),
                     ],
                   ),
                 ],
@@ -120,18 +148,30 @@ class _AccountViewState extends State<AccountView> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
-                      Text("Bonus", style: TextStyle(color: AppColors.basicWhite, fontSize: 16.0, fontWeight: FontWeight.bold)),
+                      Text("Bonus",
+                          style: TextStyle(
+                              color: AppColors.basicWhite,
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.bold)),
                       SizedBox(height: 10.0),
-                      Text("FANDUEL SPORTSBOOK", style: TextStyle(color: AppColors.basicWhite, fontSize: 14.0)),
+                      Text("GAWDGAMES SPORTSBOOK",
+                          style: TextStyle(
+                              color: AppColors.basicWhite, fontSize: 14.0)),
                     ],
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: const [
-                      Text("\$256", style: TextStyle(color: AppColors.basicWhite, fontSize: 16.0, fontWeight: FontWeight.bold)),
+                      Text("\$256",
+                          style: TextStyle(
+                              color: AppColors.basicWhite,
+                              fontSize: 16.0,
+                              fontWeight: FontWeight.bold)),
                       SizedBox(height: 10.0),
-                      Text("BALANCE", style: TextStyle(color: AppColors.basicWhite, fontSize: 14.0)),
+                      Text("BALANCE",
+                          style: TextStyle(
+                              color: AppColors.basicWhite, fontSize: 14.0)),
                     ],
                   ),
                 ],
@@ -142,25 +182,36 @@ class _AccountViewState extends State<AccountView> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
-              Text("If you have any question about your account balance ", style: TextStyle(color: AppColors.offWhite, fontSize: 12)),
+              Text("If you have any question about your account balance ",
+                  style: TextStyle(color: AppColors.offWhite, fontSize: 12)),
               SizedBox(height: 5.0),
-              Text("Contact our support Team", style: TextStyle(color: AppColors.lightOrange, fontSize: 12)),
+              Text("Contact our support Team",
+                  style: TextStyle(color: AppColors.lightOrange, fontSize: 12)),
             ],
           ),
           const SizedBox(height: 30.0),
-          CustomButton2(color: AppColors.green, onpressed: ()=>Get.to(()=>const AddFundView()), name: "Add Fund", icon: Image.asset("images/icon.png")),
+          CustomButton2(
+              color: AppColors.green,
+              onpressed: () => Get.to(() => const AddFundView()),
+              name: "Add Fund",
+              icon: Image.asset("images/icon.png")),
           const SizedBox(height: 20.0),
-          CustomButton2(color: AppColors.skyBlue, onpressed: (){}, name: "Withdraw Fund", icon: Image.asset("images/icon.png")),
+          CustomButton2(
+              color: AppColors.skyBlue,
+              onpressed: () {},
+              name: "Withdraw Fund",
+              icon: Image.asset("images/icon.png")),
           const SizedBox(height: 30.0),
           Container(
             height: 58,
             width: Get.width,
             color: AppColors.grey,
             padding: const EdgeInsets.only(left: 15.0),
-            child:  Row(
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: const [
-                Text("Account Overview", style: TextStyle(color: AppColors.basicWhite)),
+                Text("Account Overview",
+                    style: TextStyle(color: AppColors.basicWhite)),
                 Text(""),
               ],
             ),
@@ -169,7 +220,8 @@ class _AccountViewState extends State<AccountView> {
             height: 45.0,
             width: Get.width,
             decoration: const BoxDecoration(
-              border: Border.symmetric(horizontal: BorderSide(color: AppColors.offWhite)),
+              border: Border.symmetric(
+                  horizontal: BorderSide(color: AppColors.offWhite)),
               color: AppColors.grey,
             ),
             padding: const EdgeInsets.symmetric(horizontal: 15.0),
@@ -177,7 +229,8 @@ class _AccountViewState extends State<AccountView> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  Text("Account balance", style: TextStyle(color: AppColors.basicWhite)),
+                  Text("Account balance",
+                      style: TextStyle(color: AppColors.basicWhite)),
                   Icon(Icons.arrow_forward_ios, color: AppColors.offWhite),
                 ],
               ),
@@ -195,12 +248,13 @@ class _AccountViewState extends State<AccountView> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  Text("Transaction history", style: TextStyle(color: AppColors.basicWhite)),
+                  Text("Transaction history",
+                      style: TextStyle(color: AppColors.basicWhite)),
                   Icon(Icons.arrow_forward_ios, color: AppColors.offWhite),
                 ],
               ),
             ),
-            onTap: ()=>Get.to(()=>const TransactionHistoryView()),
+            onTap: () => Get.to(() => const TransactionHistoryView()),
           ),
           InkWell(
             child: Container(
@@ -214,25 +268,8 @@ class _AccountViewState extends State<AccountView> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  Text("Tax Information", style: TextStyle(color: AppColors.basicWhite)),
-                  Icon(Icons.arrow_forward_ios, color: AppColors.offWhite),
-                ],
-              ),
-            ),
-          ),
-          InkWell(
-            child: Container(
-              height: 45.0,
-              width: Get.width,
-              decoration: const BoxDecoration(
-                border: Border(bottom: BorderSide(color: AppColors.offWhite)),
-                color: AppColors.grey,
-              ),
-              padding: const EdgeInsets.symmetric(horizontal: 15.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text("Activty Statemnt", style: TextStyle(color: AppColors.basicWhite)),
+                  Text("Tax Information",
+                      style: TextStyle(color: AppColors.basicWhite)),
                   Icon(Icons.arrow_forward_ios, color: AppColors.offWhite),
                 ],
               ),
@@ -250,15 +287,39 @@ class _AccountViewState extends State<AccountView> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
-                  Text("Account Settings", style: TextStyle(color: AppColors.basicWhite)),
+                  Text("Activty Statemnt",
+                      style: TextStyle(color: AppColors.basicWhite)),
                   Icon(Icons.arrow_forward_ios, color: AppColors.offWhite),
                 ],
               ),
             ),
-            onTap: ()=>Get.to(()=>const AccountSettingsView()),
+          ),
+          InkWell(
+            child: Container(
+              height: 45.0,
+              width: Get.width,
+              decoration: const BoxDecoration(
+                border: Border(bottom: BorderSide(color: AppColors.offWhite)),
+                color: AppColors.grey,
+              ),
+              padding: const EdgeInsets.symmetric(horizontal: 15.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text("Account Settings",
+                      style: TextStyle(color: AppColors.basicWhite)),
+                  Icon(Icons.arrow_forward_ios, color: AppColors.offWhite),
+                ],
+              ),
+            ),
+            onTap: () => Get.to(() => const AccountSettingsView()),
           ),
           const SizedBox(height: 50.0),
-          CustomButton2(color: AppColors.red, onpressed: (){}, name: "Log out", icon: Image.asset("images/ic_logout.png")),
+          CustomButton2(
+              color: AppColors.red,
+              onpressed: () {},
+              name: "Log out",
+              icon: Image.asset("images/ic_logout.png")),
           const SizedBox(height: 30.0),
         ],
       )),

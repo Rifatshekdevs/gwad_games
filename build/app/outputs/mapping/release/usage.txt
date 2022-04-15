@@ -586,8 +586,8 @@ kotlin.LazyKt__LazyKt:
     private static final java.lang.Object getValue(kotlin.Lazy,java.lang.Object,kotlin.reflect.KProperty)
     public void <init>()
 kotlin.HashCodeKt
-kotlinx.coroutines.sync.SemaphoreSegment
 androidx.core.os.EnvironmentCompat
+kotlinx.coroutines.sync.SemaphoreSegment
 kotlin.math.MathKt__MathJVMKt
 kotlinx.coroutines.internal.ThreadLocalKey
 kotlinx.coroutines.RemoveOnCancel
@@ -8517,5 +8517,5 @@ androidx.core.content.res.ResourcesCompat:
     private static final java.lang.ThreadLocal sTempTypedValue
     private static final java.util.WeakHashMap sColorStateCaches
     private static final java.lang.Object sColorStateCacheLock
-io.flutter.plugin.platform.PlatformView$-CC
 io.flutter.plugin.common.BinaryMessenger$-CC
+io.flutter.plugin.platform.PlatformView$-CC
